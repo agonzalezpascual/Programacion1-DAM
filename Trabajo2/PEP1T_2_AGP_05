@@ -1,0 +1,34 @@
+# Así inicializamos nuestras variables para no tener ningún problema con sus valores
+cont = 0
+cont2 = 0
+cont3 = 0
+cont4 = 0
+camb = "STOP"
+cadf = ""
+cadi = input("Introduce el mensaje a telegrafiar: ")
+# Los prints vacíos sirven para saltar una línea haciendo que el resultado en pantalla sea más legible
+print()
+print("El mensaje introducico es: ", cadi)
+# Esta sentencia nos permite transformar la cadena en una lista de sus palabras
+# (Quitando los puntos ya que estos falsearían el recuento de palabras)
+cadc = cadi.replace(".", " ").split(" ")
+# Esta condición nos sirve para en caso de que el usuario introduzca el punto final poner un STOP al final de la cadena
+if cadi[-1] == ".":
+    cont = 1
+    cadi = cadi + camb
+# Esta sentencia intercambia los puntos por STOP
+cadf = cadi.replace(".", camb)
+print()
+print("La cadena a enviar será: ", cadf)
+print()
+n = len(cadc)
+# Este bucle nos permite saber cuantas palabras de cada tipo hay en la frase
+for i in range(n-cont):
+    cont2 = len(cadc[i])
+    if cont2 < 6:
+        cont3 = cont3 + 1
+    elif cont2 > 5:
+        cont4 = cont4 + 1
+print(f"La cadena contiene {n-cont} palabras, de las cuales {cont4} tienen más de 5 letras.")
+print(f"Por tanto, al precio de 0.25€/palabra tenemos {cont3} y a 0.50€/palabra hay otra(s) {cont4}")
+print("Total: ", cont3*0.25+cont4*0.5, "€")
