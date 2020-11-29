@@ -1,0 +1,5 @@
+Este fichero ha sido creado con tres datos cuyas características son:
+
+int num_abo;
+char nombre[30];
+float valor_fact;

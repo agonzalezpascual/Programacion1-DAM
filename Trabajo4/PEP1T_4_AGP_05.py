@@ -20,7 +20,7 @@ def limpialist(lista):
     return cad
 
 # Cuerpo
-dicc={1:"\n * \n", 2:"  *\n\n*  ",3:"  *\n * \n*  ",4:"* *\n\n* *",5:"* *\n * \n* *",6:"* *\n* *\n* *"}
+dicc = {1:"\n * \n", 2:"  *\n\n*  ",3:"  *\n * \n*  ",4:"* *\n\n* *",5:"* *\n * \n* *",6:"* *\n* *\n* *"}
 cant = 1
 lista = []
 # Este bucle While hace las veces de menú del programa
