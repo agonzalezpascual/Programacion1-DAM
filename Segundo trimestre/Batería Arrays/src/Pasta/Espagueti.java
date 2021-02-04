@@ -4,8 +4,8 @@ public class Espagueti extends Noodle{
 
     public Espagueti(int longitud, int anchura) {
         super(longitud, anchura);
-        this.forma = "Cueza los spaghettis de 8 a 10 minutos y añada la salsa al gusto, queso o aceite y ajo.";
-        this.harina = "sémola";
+        forma = "Cueza los spaghettis de 8 a 10 minutos y añada la salsa al gusto, queso o aceite y ajo.";
+        harina = "sémola";
     }
     public String getForma(){
 

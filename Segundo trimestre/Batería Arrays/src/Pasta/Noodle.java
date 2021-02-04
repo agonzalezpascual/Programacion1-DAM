@@ -4,9 +4,10 @@ public class Noodle {
     int longitud, anchura;
     String forma, harina;
 
-    public Noodle (int longitud, int anchura){
+    public Noodle (int longitud, int anchura) {
         this.longitud = longitud;
         this.anchura = anchura;
+    }
         public void preparacion(String forma){
             this.forma = forma;
             System.out.println(forma);
@@ -15,7 +16,7 @@ public class Noodle {
             this.harina = harina;
             System.out.println("Básicamente está hecho de harina de " + harina);
         }
-    }
+
 
 
     public static void main(String[] args){
@@ -24,7 +25,7 @@ public class Noodle {
         pasta[0] = new Pho(10,2);
         pasta[0] = new Ramen(10,2);
         for(Noodle i: pasta){
-            i.preparacion(i.getForma);
+
 
         }
     }
