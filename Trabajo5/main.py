@@ -7,16 +7,18 @@ import pickle
 #Factura = 34.56
 """float(input("introduzca la factura del abonado"))"""
 
-"""with open("abonados.dat", "rb+") as archivo: # Apartado 1
+"""lista = [{'numAbo': '636363636', 'nomAbo': 'Alex', 'facAbo': 34.45}, {'numAbo': '626262626', 'nomAbo': 'Ana', 'facAbo': 41.87}]
+
+print(lista[0]["numAbo"])"""
+
+
+with open("1af8a910-99cd-3748-b92c-d6d8b05b9e96.dat", "rb+") as archivo: # Apartado 1
     lista = pickle.load(archivo)
-    pickle.dump(lista, archivo)
+"""    pickle.dump(lista, archivo)
 with open("abonados.dat", "rb+") as archivo:
     lista.append({'numAbo': Numero, 'nomAbo': Nombre, 'facAbo': Factura})
     pickle.dump(lista, archivo)
 with open("abonados.dat", "rb+") as archivo:
-    list = pickle.load(archivo)
-print(list)"""
+    list = pickle.load(archivo)"""
+print(lista)
 
-lista = [{'numAbo': '636363636', 'nomAbo': 'Alex', 'facAbo': 34.45}, {'numAbo': '626262626', 'nomAbo': 'Ana', 'facAbo': 41.87}]
-
-print(lista[0]["numAbo"])
