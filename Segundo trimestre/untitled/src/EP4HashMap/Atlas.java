@@ -27,7 +27,7 @@ public class Atlas {
         }
         else{
 
-            System.out.println("No se ha encontrado el país");
+            System.out.println("De este país no se encuentra capital");
         }
 
     }
