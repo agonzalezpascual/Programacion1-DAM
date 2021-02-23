@@ -19,48 +19,41 @@ public class Atlas {
         System.out.println("Hay " + paises.size() + " elementos en el Atlas");
     }
 
-    public boolean buscEnt(String p){
+    public void devEnt(String p){
 
-        boolean ret = false;
-
-            if (paises.containsKey(p)) {
-
-                ret = true;
-            }
-
-        else{
-
-        System.out.println("No se ha encontrado el país");
-    }
-    return ret;
-    }
-
-    public void devEnt(boolean i, String p){
-
-        if(i == true){
+        if(paises.containsKey(p)){
 
             System.out.println("Capital: " + paises.get(p));
         }
+        else{
 
-
-    }
-
-    public void modEnt(boolean i, String p, String cn){
-        if(i == true){
-
-            paises.replace(p,cn);
+            System.out.println("No se ha encontrado el país");
         }
 
     }
 
-    public void quitEnt(boolean i, String p){
+    public void modEnt(String p, String cn){
+        if(paises.containsKey(p)){
 
-        if(i == true){
+            paises.replace(p,cn);
+        }
+        else{
+
+            System.out.println("No se ha encontrado el país");
+        }
+    }
+
+    public void quitEnt(String p){
+
+        if(paises.containsKey(p)){
 
             System.out.println(p + " eliminada del Atlas");
             paises.remove(p);
         }
+        else{
 
+            System.out.println("No se ha encontrado el país");
+        }
     }
 
     public void borAtl(){

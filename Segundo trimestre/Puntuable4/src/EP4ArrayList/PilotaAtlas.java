@@ -12,20 +12,18 @@ public class PilotaAtlas {
         String opc;
         boolean menu = true;
 
-
-
-
-
-
-
-
         while(menu){
 
             System.out.println();
             System.out.println(" 1.Añadir una entrada al atlas \t 2.Mostrar el contenido actual del atlas \n 3.Buscar una entrada del atlas \t 4.Modificar una entrada del atlas \n 5.Eliminar una entrada del atlas \t 6.Elimina el contenido completo del atlas \n 7.Salir\n\n"
                     );
             System.out.print("Introduzca una opción: ");
-            opc = teclado.nextLine();
+            try{
+            opc = teclado.nextLine();}
+            catch(NumberFormatException ex){
+                System.err.println("Por favor introduzca un número entero");
+                //request for well-formatted string
+            }
             System.out.println();
             switch (opc) {
 

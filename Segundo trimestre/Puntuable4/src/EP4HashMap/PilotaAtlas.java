@@ -13,13 +13,6 @@ public class PilotaAtlas {
         String opc;
         boolean menu = true;
 
-
-
-
-
-
-
-
         while(menu){
 
             System.out.println();
@@ -46,7 +39,7 @@ public class PilotaAtlas {
                 case "3":
                     System.out.print("Introduzca el país: ");
                     pais = teclado.nextLine();
-                    atlas.devEnt(atlas.buscEnt(pais), pais);
+                    atlas.devEnt(pais);
                     break;
 
                 case "4":
@@ -54,13 +47,13 @@ public class PilotaAtlas {
                     pais = teclado.nextLine();
                     System.out.print("Introduzca la modificación de capital: ");
                     capital = teclado.nextLine();
-                    atlas.modEnt(atlas.buscEnt(pais), pais, capital);
+                    atlas.modEnt(pais, capital);
                     break;
 
                 case "5":
                     System.out.print("Introduzca el país: ");
                     pais = teclado.nextLine();
-                    atlas.quitEnt(atlas.buscEnt(pais), pais);
+                    atlas.quitEnt(pais);
                     break;
 
                 case "6":
