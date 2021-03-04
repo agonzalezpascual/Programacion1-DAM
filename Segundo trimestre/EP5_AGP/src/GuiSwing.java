@@ -1,10 +1,18 @@
 import javax.swing.*; //Importando el paquete de los controles Swing
 import java.awt.*;
-class GuiSwing {
-    public static void main(String[] args) {
-        int intentos =0;
-        int acertados =0;
-        int fallados =0;
+import java.awt.event.*;
+import java.math.*;
+class GuiSwing{
+
+    int intentos =0;
+    int acertados =0;
+    int fallados =0;
+    String val="";
+    int resul = 0;
+
+    public void creaGUI(){
+
+
 
         JFrame marco = new JFrame("Adivina el resultado de la suma");
         JLabel etiqueta1 = new JLabel("Número 1: ");
@@ -16,13 +24,13 @@ class GuiSwing {
         JLabel etiqueta7 = new JLabel(String.valueOf(intentos),10);
         JLabel etiqueta8 = new JLabel(String.valueOf(acertados),10);
         JLabel etiqueta9 = new JLabel(String.valueOf(fallados),10);
-        JButton boton1 = new JButton("Generar");
-        JButton boton2 = new JButton("Verificar");
-        JButton boton3 = new JButton("Salir");
-        JTextField campotexto1 = new JTextField(5);
-        JTextField campotexto2 = new JTextField(5);
+        JButton botonGene = new JButton("Generar");
+        JButton botonVerif = new JButton("Verificar");
+        JButton botonSal = new JButton("Salir");
+        JTextField campotexto1 = new JTextField("0",5);
+        JTextField campotexto2 = new JTextField("0",5);
         JTextField campotexto3 = new JTextField(5);
-        campotexto1.setLayout(new FlowLayout(FlowLayout.RIGHT,5,5));
+       // campotexto1.setLayout(new FlowLayout(FlowLayout.RIGHT,5,5));
 
         JPanel paneln = new JPanel();
         JPanel panelc = new JPanel();
@@ -30,7 +38,7 @@ class GuiSwing {
 
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         marco.setSize(550, 150);
-        marco.setLocation(100, 50);
+        marco.setLocation(500, 350);
 
 
         FlowLayout espaciado = new FlowLayout(FlowLayout.CENTER,10,5);
@@ -45,9 +53,9 @@ class GuiSwing {
         marco.add(paneln, BorderLayout.NORTH);
 
 
-        panelc.add(boton1);
-        panelc.add(boton2);
-        panelc.add(boton3);
+        panelc.add(botonGene);
+        panelc.add(botonVerif);
+        panelc.add(botonSal);
         panelc.setLayout(espaciado);
         marco.add(panelc, BorderLayout.CENTER);
         panels.add(etiqueta4);
@@ -61,12 +69,60 @@ class GuiSwing {
         panels.setLayout(espaciado);
         marco.add(panels, BorderLayout.SOUTH);
 
+
+
+
+        ActionListener actionListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == botonGene) {
+                    campotexto1.setText(generaNum());
+                    campotexto2.setText(generaNum());
+                }
+                if (e.getSource() == botonVerif) {
+                    resul = Integer.parseInt(JOptionPane.showInputDialog(marco,"Teclee su resultado",JOptionPane.QUESTION_MESSAGE));
+
+                    if (resul == (Integer.parseInt(campotexto2.getText()) + Integer.parseInt(campotexto1.getText()))){
+
+                        etiqueta7.setText(String.valueOf(Integer.parseInt(etiqueta7.getText()) + 1));
+                        etiqueta8.setText(String.valueOf(Integer.parseInt(etiqueta8.getText()) + 1));
+                        campotexto3.setText(String.valueOf(resul));
+
+                    }
+                    else{
+                        etiqueta7.setText(String.valueOf(Integer.parseInt(etiqueta7.getText()) + 1));
+                        etiqueta9.setText(String.valueOf(Integer.parseInt(etiqueta9.getText()) + 1));
+                        campotexto3.setText(String.valueOf(Integer.parseInt(campotexto2.getText()) + Integer.parseInt(campotexto1.getText())));
+                    }
+
+            }
+                if (e.getSource() == botonSal) {
+
+                    System.exit(0);
+
+
+                }
+            }
+        };
         panels.setVisible(true);
         panelc.setVisible(true);
         paneln.setVisible(true);
         marco.setVisible(true);
+        botonGene.addActionListener(actionListener);
+        botonVerif.addActionListener(actionListener);
+    }
+
+    public String generaNum(){
+
+        return String.valueOf(Math.toIntExact(Math.round(Math.random() * 999)));
 
 
+    }
+
+    public void generaInput(){
+        JFrame marco2 = new JFrame("Input");
+        marco2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        marco2.setSize(550, 150);
+        marco2.setLocation(100, 50);
 
     }
 }
