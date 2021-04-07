@@ -1,4 +1,4 @@
-public class PilotoGUI {
+public class PilotoGui {
 
     public static void main(String[] args) {
 
