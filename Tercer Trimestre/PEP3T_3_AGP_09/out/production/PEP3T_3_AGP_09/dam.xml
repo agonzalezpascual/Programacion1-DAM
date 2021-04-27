@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DAM>
+    <curso año="2021">
+        <denominacion>1ºCFGS</denominacion>
+        <alumno id="1">
+            <nombre>Adolfo</nombre>
+            <instrumento>Webquest</instrumento>
+            <nota>6.5</nota>
+        </alumno>
+        <alumno id="2">
+            <nombre>Nuria</nombre>
+            <instrumento>Puntuable 3</instrumento>
+            <nota>8.75</nota>
+        </alumno>
+        <alumno id="3">
+            <nombre>Nekane</nombre>
+            <instrumento>Test</instrumento>
+            <nota>3.9</nota>
+        </alumno>
+    </curso>
+    <curso año="2021">
+        <denominacion>2ºCFGS</denominacion>
+        <alumno id="4">
+            <nombre>Armanda</nombre>
+            <instrumento>Práctica</instrumento>
+            <nota>8.25</nota>
+        </alumno>
+        <alumno id="5">
+            <nombre>Sebastián</nombre>
+            <instrumento>Caso PBL</instrumento>
+            <nota>5.75</nota>
+        </alumno>
+        <alumno id="6">
+            <nombre>Rolando</nombre>
+            <instrumento>Exposición</instrumento>
+            <nota>4.25</nota>
+        </alumno>
+    </curso>
+</DAM>
