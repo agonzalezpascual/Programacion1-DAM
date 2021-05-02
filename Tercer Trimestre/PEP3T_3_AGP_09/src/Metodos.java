@@ -192,17 +192,12 @@ public class Metodos {
             Transformer transformador = factoriaTransf.newTransformer();
             DOMSource source = new DOMSource(docDOM);
             //Muestra por pantalla el fichero XML tras la modificación
-            System.out.println("---Documento XML resultante---");
+            /*System.out.println("---Documento XML resultante---");
             StreamResult consoleResult = new StreamResult(System.out);
-            transformador.transform(source, consoleResult);
+            trnsformador.transform(source, consoleResult);*/
             //Indica el nombre del fichero sobre el que sobreescribirá tras la modificación
             StreamResult fileResult = new StreamResult(new File("src/peliculas.xml"));
             transformador.transform(source, fileResult);
-
-
-
-
-
 
 
             } catch (ParserConfigurationException e) {
@@ -250,11 +245,7 @@ public class Metodos {
                     break;}
                 case "3":{
                     // Al final
-                    DentroPelic = listPelic.item(listPelic.getLength()-1).getChildNodes();
                     listPelic.item(listPelic.getLength()-1).getParentNode().removeChild(listPelic.item(listPelic.getLength()-1));
-                    Node nodeSelF = DentroPelic.item(menuS());
-                    System.out.println("Introduzca el nuevo contenido para el nodo");
-                    nodeSelF.setTextContent(teclado.nextLine());
                     break;}}
 
             /*for (int cont2N = 0; cont2N < DentroPelic.getLength(); cont2N++) {
@@ -271,9 +262,9 @@ public class Metodos {
             Transformer transformador = factoriaTransf.newTransformer();
             DOMSource source = new DOMSource(docDOM);
             //Muestra por pantalla el fichero XML tras la modificación
-            System.out.println("---Documento XML resultante---");
+            /*System.out.println("---Documento XML resultante---");
             StreamResult consoleResult = new StreamResult(System.out);
-            transformador.transform(source, consoleResult);
+            transformador.transform(source, consoleResult);*/
             //Indica el nombre del fichero sobre el que sobreescribirá tras la modificación
             StreamResult fileResult = new StreamResult(new File("src/peliculas.xml"));
             transformador.transform(source, fileResult);
@@ -297,11 +288,13 @@ public class Metodos {
     public void menuP(){
 
         while(true){
-        System.out.println("1) Presentar el documento XML completo\n" +
+            System.out.println("==============\nMenú Principal\n==============");
+        System.out.println("\n1) Presentar el documento XML completo\n" +
                 "2) Añadir nuevo nodo al documento\n" +
                 "3) Modificar datos de un nodo del documento\n" +
                 "4) Eliminar un nodo concreto del documento\n" +
                 "5) Salir\n");
+            System.out.print("Introduzca una opción: ");
 
         String opc = teclado.nextLine();
 
@@ -328,6 +321,7 @@ public class Metodos {
             }
 
             case "5":{
+                System.out.println("Hasta la próxima");
                 System.exit(0);
             }
         }
@@ -337,11 +331,12 @@ public class Metodos {
     public void menuA(){
 
         while(true){
-            System.out.println("1) Insertar nodo al principio del documento\n" +
+            System.out.println("===========\nMenú Añadir\n===========");
+            System.out.println("\n1) Insertar nodo al principio del documento\n" +
                 "2) Insertar nodo en posiciones intermedias del documento\n" +
                 "3) Insertar nodo al final del documento\n" +
                 "4) Volver al menú principal");
-
+            System.out.print("Introduzca una opción: ");
         String opc =teclado.nextLine();
 
         switch (opc){
@@ -371,11 +366,12 @@ public class Metodos {
     public void menuM(){
 
         while(true){
-            System.out.println("1) Modificar nodo al principio del documento\n" +
+            System.out.println("==============\nMenú Modificar\n==============");
+            System.out.println("\n1) Modificar nodo al principio del documento\n" +
                     "2) Modificar nodo en posiciones intermedias del documento\n" +
                     "3) Modificar nodo al final del documento\n" +
                     "4) Volver al menú principal");
-
+            System.out.print("Introduzca una opción: ");
             String opc =teclado.nextLine();
 
             switch (opc){
@@ -403,11 +399,11 @@ public class Metodos {
 
     public int menuS(){
 
-        System.out.println("1) Titulo 4) Director\n" +
+        System.out.println("\n1) Titulo 4) Director\n" +
                 "2) Guionista 5) Actor\n" +
                 "3) Productora 6) Sinopsis\n" +
                 "7) Volver al menú anterior");
-
+        System.out.print("Introduzca una opción: ");
         int retorno = Integer.parseInt(teclado.nextLine());
         if(retorno == 7){
 
@@ -420,12 +416,13 @@ public class Metodos {
 
     public void menuE(){
         while (true){
-        System.out.println("1) Eliminar nodo al principio del documento\n" +
+            System.out.println("=============\nMenú Eliminar\n=============");
+        System.out.println("\n1) Eliminar nodo al principio del documento\n" +
                 "2) Eliminar nodo en posiciones intermedias del documento\n" +
                 "3) Eliminar nodo al final del documento\n" +
                 "4) Volver al menú principal");
 
-
+            System.out.print("Introduzca una opción: ");
         String opc =teclado.nextLine();
 
         switch (opc){

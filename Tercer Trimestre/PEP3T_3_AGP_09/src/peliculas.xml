@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><peliculas>
-    
-    
-    <pelicula><titulo>wowow</titulo><guionista>guionista</guionista><productora>productora</productora><director>director</director><actor>actor</actor><sinopsis>sinopsis</sinopsis></pelicula><pelicula>
+    <pelicula>
         <titulo>El jugador de ajedrez</titulo>
         <guionista>Julio Castedo</guionista>
         <productora>Ishtar Films</productora>
