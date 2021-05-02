@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><peliculas>
-    <pelicula>
-        <titulo>Le Lion</titulo>
-        <guionista>Pepito</guionista>
-        <productora>HolaHOa</productora>
-        <director>Ludovic Colbeau-Justin</director>
-        <actor>Yo</actor>
-        <sinopsis>wewewe</sinopsis>
-    </pelicula>
-    <pelicula>
-        <titulo>Verano 1993</titulo>
-        <guionista>Carla Simón</guionista>
-        <productora>Inicia Films</productora>
-        <director>Carla Simón</director>
-        <actor>Laia Artigas</actor>
-        <sinopsis>Frida (Laia Artigas), una niña de seis años, afronta el primer verano de su vida con su
-            nueva familia adoptiva tras la muerte de su madre. Lejos de su entorno cercano, en pleno campo, la niña
-            deberá adaptarse a su nueva vida.
-        </sinopsis>
-    </pelicula>
-    <pelicula><guionista>Pepito</guionista><productora>HolaHOa</productora><director>Ludovic Colbeau-Justin</director><actor>Yo</actor><sinopsis>wewewe</sinopsis></pelicula><pelicula><titulo>wonwoneo </titulo><guionista>Pepito</guionista><productora>HolaHOa</productora><director>Ludovic Colbeau-Justin</director><actor>Yo</actor><sinopsis>wewewe</sinopsis></pelicula><pelicula>
+    
+    
+    <pelicula><titulo>wowow</titulo><guionista>guionista</guionista><productora>productora</productora><director>director</director><actor>actor</actor><sinopsis>sinopsis</sinopsis></pelicula><pelicula>
         <titulo>El jugador de ajedrez</titulo>
         <guionista>Julio Castedo</guionista>
         <productora>Ishtar Films</productora>

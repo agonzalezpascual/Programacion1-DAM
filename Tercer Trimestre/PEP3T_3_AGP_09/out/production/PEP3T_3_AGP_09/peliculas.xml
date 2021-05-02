@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><peliculas>
-    <pelicula>
-        <titulo>Le Lion</titulo>
-        <guionista>Pepito</guionista>
-        <productora>HolaHOa</productora>
-        <director>Ludovic Colbeau-Justin</director>
-        <actor>Yo</actor>
-        <sinopsis>wewewe</sinopsis>
-    </pelicula>
+    
     <pelicula>
         <titulo>Verano 1993</titulo>
         <guionista>Carla Simón</guionista>
@@ -18,7 +11,7 @@
             deberá adaptarse a su nueva vida.
         </sinopsis>
     </pelicula>
-    <pelicula><titulo>wonwoneo </titulo><guionista>Pepito</guionista><productora>HolaHOa</productora><director>Ludovic Colbeau-Justin</director><actor>Yo</actor><sinopsis>wewewe</sinopsis></pelicula><pelicula>
+    <pelicula><titulo>wowow</titulo><guionista>guionista</guionista><productora>productora</productora><director>director</director><actor>actor</actor><sinopsis>sinopsis</sinopsis></pelicula><pelicula>
         <titulo>El jugador de ajedrez</titulo>
         <guionista>Julio Castedo</guionista>
         <productora>Ishtar Films</productora>
@@ -38,4 +31,4 @@
             se ve envuelta en el golpe de Estado de Chile en 1973 conta Salvador Allende.
         </sinopsis>
     </pelicula>
-</peliculas>
+<pelicula><titulo>tttttttttt</titulo><guionista>qweqew</guionista><productora>pewprewp</productora><director>dededed</director><actor>asdfafs</actor><sinopsis>rererererer</sinopsis></pelicula></peliculas>

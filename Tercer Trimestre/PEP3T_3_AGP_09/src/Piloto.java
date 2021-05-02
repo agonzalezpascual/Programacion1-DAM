@@ -11,13 +11,7 @@ import org.w3c.dom.NodeList;
 
             Metodos M = new Metodos();
 
-            M.mostrarFich();
-            M.añadeNodo();
-            M.mostrarFich();
-            M.modNodo();
-            M.mostrarFich();
-            M.eliminaNodo();
-            M.mostrarFich();
+            M.menuP();
 
         }
     }
