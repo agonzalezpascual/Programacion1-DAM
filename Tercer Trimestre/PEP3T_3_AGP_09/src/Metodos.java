@@ -170,6 +170,7 @@ public class Metodos {
             break;}
             case "2":{
         // En medio
+                System.out.print("Introduzca el título a buscar");
             String tituloBusq = teclado.nextLine();
         for(int cont = 0; cont < listPelic.getLength(); cont++){
             DentroPelic = listPelic.item(cont).getChildNodes();
@@ -235,6 +236,7 @@ public class Metodos {
                     break;}
                 case "2":{
                     // En medio
+                    System.out.print("Introduzca el título de la película a buscar: ");
                     String tituloBusq = teclado.nextLine();
                     for(int cont = 0; cont < listPelic.getLength(); cont++){
                         DentroPelic = listPelic.item(cont).getChildNodes();
